@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cash</title>
+</head>
+<body>
+
+    {% for dat in car_record %}
+    <tr>
+        <td>vehicle registration number - {{dat[1]}}</td>
+        <br>
+        <td>driver name - {{dat[0]}}</td>
+        <br>
+        <td>ammount owed - {{dat[2]}}</td>
+
+    </tr>
+    {% endfor%}
+    <a href="/emporium">go back</a>
+
+</table>
+</body>
+</html>

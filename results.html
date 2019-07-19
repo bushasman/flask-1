@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<table border=1>
+    {% for dat in car_records %}
+    <tr>
+        <td>car type - {{dat[0]}} </td>
+        <td>make - {{dat[1]}}</td>
+        <td>vehicle registration number - {{dat[2]}}</td>
+        <td>driver name - {{dat[3]}}</td>
+        <td>driver contact - {{dat[4]}}</td>
+        <td>year of make - {{dat[5]}}</td>
+        <td>driver license number - {{dat[6]}}</td>
+    </tr>
+    {% endfor%}
+</table>
+<a href="/emporium">Go back</a>
